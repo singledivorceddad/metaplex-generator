@@ -10,6 +10,7 @@ import {
   AuctionCreateView,
   AuctionView,
   HomeView,
+  GeneratorView,
 } from './views';
 import { AdminView } from './views/admin';
 import { BillingView } from './views/auction/billing';
@@ -55,6 +56,7 @@ export function Routes() {
               component={() => <BillingView />}
             />
             <Route path="/" component={() => <HomeView />} />
+            <Route exact path="/generator" component={() => <GeneratorView />} />
           </Switch>
         </Providers>
       </HashRouter>
