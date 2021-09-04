@@ -5,12 +5,14 @@ import {
   ArtCreateView,
   ArtistsView,
   ArtistView,
+  GeneratorView,
+  UserGeneratorView,
+  ThreeDGeneratorView,
   ArtView,
   ArtworksView,
   AuctionCreateView,
   AuctionView,
   HomeView,
-  GeneratorView,
 } from './views';
 import { AdminView } from './views/admin';
 import { BillingView } from './views/auction/billing';
@@ -37,6 +39,9 @@ export function Routes() {
               path="/artworks/:id?"
               component={() => <ArtworksView />}
             />
+            <Route exact path="/generator" component={() => <GeneratorView />} />
+            <Route exact path="/usergenerator" component={() => <UserGeneratorView />} />
+            <Route exact path="/3dgenerator" component={() => <ThreeDGeneratorView />} />
             <Route exact path="/art/:id" component={() => <ArtView />} />
             <Route exact path="/artists/:id" component={() => <ArtistView />} />
             <Route exact path="/artists" component={() => <ArtistsView />} />
@@ -56,7 +61,6 @@ export function Routes() {
               component={() => <BillingView />}
             />
             <Route path="/" component={() => <HomeView />} />
-            <Route exact path="/generator" component={() => <GeneratorView />} />
           </Switch>
         </Providers>
       </HashRouter>

@@ -3,6 +3,8 @@ export { ArtView } from './art';
 export { ArtCreateView } from './artCreate';
 export { ArtistView } from './artist';
 export { GeneratorView } from './generator';
+export { UserGeneratorView } from './usergenerator';
+export { ThreeDGeneratorView } from './3dgenerator';
 export { ArtistsView } from './artists';
 export { AuctionView } from './auction';
 export { AuctionCreateView } from './auctionCreate';

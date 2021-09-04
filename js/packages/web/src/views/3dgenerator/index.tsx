@@ -8,7 +8,7 @@ import { useCallback, useEffect, useState } from 'react';
 
 const { Content } = Layout;
 
-export const GeneratorView = () => {
+export const ThreeDGeneratorView = () => {
   const generate = useCallback(
     
   );
@@ -24,7 +24,7 @@ export const GeneratorView = () => {
         <div className="generator-wrapper" style={{ width: '100%', marginTop: 10, 'background-color': 'rgb(0, 0, 0)', padding: '10px', 'border-radius': '20px', 'box-shadow': 'rgb(255, 255, 255) 2px 2px 1px 1px', border: '1px solid rgb(255, 255, 255)' }}>
           <div className="generator-header" style={{'text-align': 'center'}}>
             <p>
-              Use our random image generator to create a super awesome unique NFT for yo' sexy self.
+              Use our 3D image generator to create a super awesome unique NFT for yo' sexy self.
             </p>
             <p>
               If its fire and you dig it, mint that bad boy and secure your dominance on the Solana blockchain!

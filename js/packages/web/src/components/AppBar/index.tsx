@@ -56,7 +56,13 @@ const DefaultActions = ({ vertical = false }: { vertical?: boolean }) => {
         <Button className="app-btn">Explore</Button>
       </Link>
       <Link to={`/generator`}>
-        <Button className="app-btn">Generator</Button>
+        <Button className="app-btn">RandoGen</Button>
+      </Link>
+      <Link to={`/usergenerator`}>
+        <Button className="app-btn">UserGen</Button>
+      </Link>
+      <Link to={`/3dgenerator`}>
+        <Button className="app-btn">3dGen</Button>
       </Link>
       <Link to={`/artworks`}>
         <Button className="app-btn">
